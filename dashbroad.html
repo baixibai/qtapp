@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>秋涛美肤</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no,minimal-ui" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+	<meta content="yes"name="apple-mobile-web-app-capable"/>
+	<meta content="black"name="apple-mobile-web-app-status-bar-style"/>
+	<meta content="telephone=no"name="format-detection"/>
+	<meta content="email=no"name="format-detection"/>
+	<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport" />
+	<meta http-equiv=X-UA-Compatible content="IE=edge">
+	<meta name=format-detection content="telephone=no">
+	<meta name=format-detection content="email=no">
+	<meta name=apple-mobile-web-app-capable content=yes>
+	<meta name=apple-mobile-web-app-status-bar-style content=black>
+	<meta name=full-screen content=yes>
+	<meta name=browsermode content=application>
+	<meta name=x5-orientation content=portrait>
+	<meta name=x5-fullscreen content=true>
+	<meta name=x5-page-mode content=app>
+    <link href="res/css/common.css" rel="stylesheet"/>
+    <link href="res/css/home.css" rel="stylesheet"/>
+	<script src="res/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div class="tabboxprive">
+    <ul class="tab">
+        <li class="active" onclick="layeropen('1',this);">未读消息</li>
+        <li onclick="layeropen('2',this);">已读消息</li>
+	</ul>
+</div>
+<p style="height: 10px;"></p>
+<div class="messagelist-box read_1">
+	<a>
+		<div class="messagelist-cell ">
+			<span>2017-11-17 10:59 谢谢你的爱！</span>
+			<i class="icon-w-arrow-right"></i>
+		</div>
+	</a>
+</div>
+<div class="messagelist-box read_2 hide">
+	<a>
+		<div class="messagelist-cell ">
+			<span>2017-11-17 10:59 谢谢你的2爱！</span>
+			<i class="icon-w-arrow-right"></i>
+		</div>
+	</a>
+</div>
+<div class="refresh-nocon">
+    <i>
+    </i>
+    <p>暂无消息</p>
+</div>
+<p style="height: 50px;"></p>
+<div class="back">
+	<div class="backbox">
+		<div class="backcon">
+			<a>
+				<p class="pt5">
+					<i class="icon-fanhui03"></i>
+				</p>
+				<p>返回</p>
+			</a>
+		</div>
+		<div class="backcon">
+			<a href="/wepay/home/4006783618">
+				<p class="pt5">
+					<i class="icon-zhuye"></i>
+				</p>
+				<p>主页</p>
+			</a>
+		</div>
+		<div class="backcon">
+			<a href="http://mp.weixin.qq.com/s/34NWaNdmC80lSNI0kLOqdw">
+				<p class="pt5 news">
+					<i class="icon-qiutao"></i>
+				</p>
+				<p>会员</p>
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	function layeropen(i,t){
+		$(".tab li").removeClass("active");
+		$(t).addClass("active");
+		$(".messagelist-box").addClass("hide");
+		$(".read_"+i).removeClass("hide");
+	}
+</script>
+</body>
+
+</html>
