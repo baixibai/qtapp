@@ -22,39 +22,10 @@
 	<meta name=x5-page-mode content=app>
     <link href="res/css/common.css" rel="stylesheet"/>
     <link href="res/css/home.css" rel="stylesheet"/>
+	<script src="res/js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<div class="home-card">
-	<div class="home-card-boxwhite">
-		<h1 class="recharge-title">储值余额</h1>
-		<h3>0元</h3>
-		<div class="cardno_t">
-			<p class="Bzluol_line"></p>
-			<span>储值余额即现金</span>
-		</div>
-	</div>
-</div>
-<div class="loadmore-box">
-	<div>
-		<p style="height: 40px;"></p>
-		<a class="button btn-big90 btn-center btn-normal" name="button" onClick="showlist()">查看流水</a>
-	</div>
-	<div id="show1" class="dialogcash hide">
-		<div class="dialogbox-con">
-			<h2>
-				验证密码
-				<i class="icon-guanbi fr CSZ Fs-20 closebtn" onClick="closelist()"></i></h2>
-			<div>
-				<input type="password" class="input_pass_weixin" maxlength="6" name="cardpass"></div>
-			<p style="height: 10px;"></p>
-			<a>
-			</a>
-			<p style="height: 10px;"></p>
-			<a class="button btn-big btn-center btn-ghost-disable_ btn-wechat" name="button">验证</a>
-			<p style="height: 20px;"></p>
-		</div>
-	</div>
-</div>
+<div class="refresh-nocon"><i></i><p>游戏正在开发中，敬请期待！</p></div>
 <p style="height: 50px;"></p>
 <div class="back">
 	<div class="backbox">
@@ -85,14 +56,4 @@
 	</div>
 </div>
 </body>
-<script>
-function showlist(){
-	var s = document.getElementById('show1');
-	s.setAttribute("class", "dialogcash"); 
-}
-function closelist(){
-	var s = document.getElementById('show1');
-	s.setAttribute("class", "dialogcash hide"); 
-}
-</script>
 </html>

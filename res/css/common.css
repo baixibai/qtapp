@@ -2,15 +2,7 @@
 html,body{font-family:"Microsoft YaHei";font-size: 100%;color:#505050;-webkit-user-select:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-webkit-touch-callout:none;-webkit-touch-callout:none;}  
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}  
 body,button,input,select,textarea {font:14px \5b8b\4f53;font-family:"Microsoft YaHei";line-height:20px;}  
-h1{font-size:24px;}  
-h2{font-size:22px;}  
-h3{font-size:18px;}  
-@media only screen and (min-width:360px) {  
-    h1{font-size:28px;}  
-    h2{font-size:26px;}  
-    h3{font-size:22px;}  
-    body,button,input,select,textarea {font-size:18px;}  
-}  
+
 h1,h2,h3,h4,h5,h6 {font-weight:normal;}  
 html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}/*阻止旋转屏幕时自动调整字体大小*/  
 textarea{resize:none;}  
@@ -99,4 +91,348 @@ a, article, body, div, em, form, h1, h2, h3, h4, h5, h6, i, input, li, ol, p, se
     width: 10px;
     height: 10px;
     background-color: #FFF;
+}
+a::selection, b::selection, em::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, i::selection, input::selection, p::selection, strong::selection, table::selection, tb::selection, th::selection, tr::selection {
+    background-color: #f49685;
+    color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999; opacity:1; 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #999;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #999;opacity:1;
+}
+textarea::-webkit-input-placeholder{
+    color: #999;opacity:1;
+}
+textarea:-ms-input-placeholder{
+    color: #999;opacity:1;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../font/icomoon.eot?123');
+    src:    url('../font/icomoon.eot?123#iefix') format('embedded-opentype'),
+        url('../font/icomoon.ttf?123') format('truetype'),
+        url('../font/icomoon.woff?123') format('woff'),
+        url('../font/icomoon.svg?123#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-fanhui03:before {
+  content: "\e900";
+}
+.icon-qiutao:before {
+  content: "\e901";
+}
+.icon-zhuye:before {
+  content: "\e902";
+}
+.icon-jiankang:before {
+  content: "\e903";
+}
+.icon-liwu:before {
+  content: "\e904";
+}
+.icon-qianbao:before {
+  content: "\e905";
+}
+.icon-qiandai:before {
+  content: "\e906";
+}
+.icon-xiaolian:before {
+  content: "\e907";
+}
+.icon-fanhui01:before {
+  content: "\e908";
+}
+.icon-fanhui02:before {
+  content: "\e909";
+}
+.icon-wo01:before {
+  content: "\e90a";
+}
+.icon-wo02:before {
+  content: "\e90b";
+}
+.icon-zhuye01:before {
+  content: "\e90c";
+}
+.icon-zhuye02:before {
+  content: "\e90d";
+}
+.icon-kaishi:before {
+  content: "\e90e";
+}
+.icon-tingzhi:before {
+  content: "\e90f";
+}
+.icon-guanzhu:before {
+  content: "\e910";
+}
+.icon-lianjie:before {
+  content: "\e911";
+}
+.icon-mima1:before {
+  content: "\e912";
+}
+.icon-mima2:before {
+  content: "\e913";
+}
+.icon-shouji:before {
+  content: "\e914";
+}
+.icon-yanzhengma:before {
+  content: "\e915";
+}
+.icon-yinhangka:before {
+  content: "\e916";
+}
+.icon-guanzhuwomen:before {
+  content: "\e917";
+}
+.icon-biyan:before {
+  content: "\e918";
+}
+.icon-dingdanzhongxin:before {
+  content: "\e919";
+}
+.icon-eweima:before {
+  content: "\e91a";
+}
+.icon-gerenzhongxin:before {
+  content: "\e91b";
+}
+.icon-guanbi:before {
+  content: "\e91c";
+}
+.icon-yaoqinghaoyou:before {
+  content: "\e91d";
+}
+.icon-yijianfankui:before {
+  content: "\e91e";
+}
+.icon-youjiangpingjia:before {
+  content: "\e91f";
+}
+.icon-zhengyan:before {
+  content: "\e920";
+}
+.icon-w-activity:before {
+  content: "\e921";
+}
+.icon-w-arrow-back:before {
+  content: "\e922";
+}
+.icon-w-arrow-left:before {
+  content: "\e923";
+}
+.icon-w-arrow-right:before {
+  content: "\e924";
+}
+.icon-w-bird:before {
+  content: "\e925";
+}
+.icon-w-car:before {
+  content: "\e926";
+}
+.icon-w-card:before {
+  content: "\e927";
+}
+.icon-w-cell:before {
+  content: "\e928";
+}
+.icon-w-checking:before {
+  content: "\e929";
+}
+.icon-w-close:before {
+  content: "\e92a";
+}
+.icon-w-complain:before {
+  content: "\e92b";
+}
+.icon-w-complains:before {
+  content: "\e92c";
+}
+.icon-w-coupon:before {
+  content: "\e92d";
+}
+.icon-w-discount:before {
+  content: "\e92e";
+}
+.icon-w-eye:before {
+  content: "\e92f";
+}
+.icon-w-game:before {
+  content: "\e930";
+}
+.icon-w-guess:before {
+  content: "\e931";
+}
+.icon-w-icon:before {
+  content: "\e932";
+}
+.icon-w-key:before {
+  content: "\e933";
+}
+.icon-w-like:before {
+  content: "\e934";
+}
+.icon-w-links:before {
+  content: "\e935";
+}
+.icon-w-list:before {
+  content: "\e936";
+}
+.icon-w-lists:before {
+  content: "\e937";
+}
+.icon-w-logo:before {
+  content: "\e938";
+}
+.icon-w-member:before {
+  content: "\e939";
+}
+.icon-w-message:before {
+  content: "\e93a";
+}
+.icon-w-money:before {
+  content: "\e93b";
+}
+.icon-w-more:before {
+  content: "\e93c";
+}
+.icon-w-navigation:before {
+  content: "\e93d";
+}
+.icon-w-new:before {
+  content: "\e93e";
+}
+.icon-w-patten:before {
+  content: "\e93f";
+}
+.icon-w-paycode:before {
+  content: "\e940";
+}
+.icon-w-phone:before {
+  content: "\e941";
+}
+.icon-w-piano:before {
+  content: "\e942";
+}
+.icon-w-play:before {
+  content: "\e943";
+}
+.icon-w-plus:before {
+  content: "\e944";
+}
+.icon-w-poker-21:before {
+  content: "\e945";
+}
+.icon-w-recharge:before {
+  content: "\e946";
+}
+.icon-w-right:before {
+  content: "\e947";
+}
+.icon-w-score:before {
+  content: "\e948";
+}
+.icon-w-score-red:before {
+  content: "\e949";
+}
+.icon-w-set:before {
+  content: "\e94a";
+}
+.icon-w-shake:before {
+  content: "\e94b";
+}
+.icon-w-sign-in:before {
+  content: "\e94c";
+}
+.icon-w-store:before {
+  content: "\e94d";
+}
+.icon-w-style:before {
+  content: "\e94e";
+}
+.icon-w-success:before {
+  content: "\e94f";
+}
+.icon-w-task:before {
+  content: "\e950";
+}
+.icon-w-telphone:before {
+  content: "\e951";
+}
+.icon-w-time:before {
+  content: "\e952";
+}
+.icon-w-today:before {
+  content: "\e953";
+}
+.icon-w-vip:before {
+  content: "\e954";
+}
+.icon-w-non-payment:before {
+  content: "\e955";
+}
+.icon-w-order:before {
+  content: "\e956";
+}
+.icon-w-friend:before {
+  content: "\e957";
+}
+.icon-w-shops:before {
+  content: "\e958";
+}
+.icon-W-paymennt:before {
+  content: "\e959";
+}
+.icon-w-vipcard-Interactive-marketing:before {
+  content: "\e95a";
+}
+.icon-w-write:before {
+  content: "\e95b";
 }

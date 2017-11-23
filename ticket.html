@@ -22,38 +22,28 @@
 	<meta name=x5-page-mode content=app>
     <link href="res/css/common.css" rel="stylesheet"/>
     <link href="res/css/home.css" rel="stylesheet"/>
+	<script src="res/js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<div class="home-card">
-	<div class="home-card-boxwhite">
-		<h1 class="recharge-title">储值余额</h1>
-		<h3>0元</h3>
-		<div class="cardno_t">
-			<p class="Bzluol_line"></p>
-			<span>储值余额即现金</span>
-		</div>
-	</div>
-</div>
-<div class="loadmore-box">
-	<div>
-		<p style="height: 40px;"></p>
-		<a class="button btn-big90 btn-center btn-normal" name="button" onClick="showlist()">查看流水</a>
-	</div>
-	<div id="show1" class="dialogcash hide">
-		<div class="dialogbox-con">
-			<h2>
-				验证密码
-				<i class="icon-guanbi fr CSZ Fs-20 closebtn" onClick="closelist()"></i></h2>
-			<div>
-				<input type="password" class="input_pass_weixin" maxlength="6" name="cardpass"></div>
-			<p style="height: 10px;"></p>
-			<a>
-			</a>
-			<p style="height: 10px;"></p>
-			<a class="button btn-big btn-center btn-ghost-disable_ btn-wechat" name="button">验证</a>
-			<p style="height: 20px;"></p>
-		</div>
-	</div>
+<div>
+    <h2 class="cell-tit title-grey">问题和意见</h2>
+    <div class="issuebox">
+        <div class="issuebox-txtbox">
+            <textarea maxlength="200" placeholder="请简要描述你的问题和意见" name="con"></textarea>
+        </div>
+    </div>
+    <p style="height: 20px;"></p>
+    <div class="issuebox">
+        <h2 class="cell-tit">
+            <span class="fll">图片（选填，提供问题截图）</span>
+            <span class="flr">0/3</span></h2>
+        <div class="issuebox-upimg">
+			<span id="showimg"><img src="../res/images/redbag_icon.png"></span>
+            <a class="icon-w-plus" id="addimg"></a>
+        </div>
+    </div>
+    <p style="height: 20px;"></p>
+    <a class="button btn-big90 btn-center btn-ghost-disable_ btn-wechat" name="button">提交</a>
 </div>
 <p style="height: 50px;"></p>
 <div class="back">
@@ -86,13 +76,24 @@
 </div>
 </body>
 <script>
-function showlist(){
-	var s = document.getElementById('show1');
-	s.setAttribute("class", "dialogcash"); 
+var boxwidth = (window.screen.width - 50 ) / 4
+var imgbox = {
+	width : boxwidth + 'px',
+	height : boxwidth + 'px',
 }
-function closelist(){
-	var s = document.getElementById('show1');
-	s.setAttribute("class", "dialogcash hide"); 
+console.log(imgbox);
+var issueimgbox = {
+	width : boxwidth + 'px',
+	height : boxwidth + 'px',
+	lineHeight : boxwidth + 'px'
 }
+var img = document.getElementById('addimg');
+var showimg = document.getElementById('showimg');
+img.style.width = boxwidth + 'px';
+img.style.height = boxwidth + 'px';
+img.style.lineHeight = boxwidth + 'px';
+showimg.style.width = boxwidth + 'px';
+showimg.style.height = boxwidth + 'px';
+showimg.style.lineHeight = boxwidth + 'px';
 </script>
 </html>

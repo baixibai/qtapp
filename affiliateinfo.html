@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>秋涛美肤</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no,minimal-ui" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+	<meta content="yes"name="apple-mobile-web-app-capable"/>
+	<meta content="black"name="apple-mobile-web-app-status-bar-style"/>
+	<meta content="telephone=no"name="format-detection"/>
+	<meta content="email=no"name="format-detection"/>
+	<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport" />
+	<meta http-equiv=X-UA-Compatible content="IE=edge">
+	<meta name=format-detection content="telephone=no">
+	<meta name=format-detection content="email=no">
+	<meta name=apple-mobile-web-app-capable content=yes>
+	<meta name=apple-mobile-web-app-status-bar-style content=black>
+	<meta name=full-screen content=yes>
+	<meta name=browsermode content=application>
+	<meta name=x5-orientation content=portrait>
+	<meta name=x5-fullscreen content=true>
+	<meta name=x5-page-mode content=app>
+    <link href="res/css/common.css" rel="stylesheet"/>
+    <link href="res/css/home.css" rel="stylesheet"/>
+	<script src="res/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div class="tabboxprive">
+    <ul class="tab">
+        <li class="active" onclick="layeropen('1',this);">我的特权卡</li>
+        <li onclick="layeropen('2',this);">我邀请的</li>
+	</ul>
+</div>
+<div class="lbox read_1">
+	<div class="home-cardbg">
+		<p style="height: 10px;"></p>
+		<div class="home-card-boxbg" style="background: url(&quot;http://member.skinperfect.cn/project/apps/wallet/img/sharecard_2.png&quot;) 50% 0% / 100% 180px no-repeat;">
+			<h3 style="color: rgb(246, 242, 195);">0</h3>
+			<div class="cardno_t">
+				<span>有效期至2018-11-22</span></div>
+		</div>
+		<p style="height: 20px;"></p>
+		<a class="abtn" onClick="descshow('1')">详细说明</a>
+		<p style="height: 10px;"></p>
+		<div class="descinfo desc_1 hide">
+			<p style="font-size: 14px;">
+				<p>
+					<span>这是一张依据秋涛美肤会员级别生成的、老会员的特权共享卡。正因为美丽共享行动，新朋友收到此卡即可尊享特权：你和老会员同时有一次机会获得相等的、你本人首日消费金额
+					<span>50%</span>的共享积分，上限就是老会员的特权共享卡的最高权益
+					<span>0</span>。老会员都知道：秋涛美肤不但明码实价，而且积分当钱花，
+					<span>1</span>积分可抵
+					<span>1</span>元现金。</span>
+				</p>
+			</p>
+		</div>
+	</div>
+	<!-- <div class="refresh-nocon"> -->
+		<!-- <i></i><p>你的卡券已使用，暂无信息</p> -->
+	<!-- </div> -->
+</div>
+<div class="listimgbox lbox read_2 hide">
+    <a>
+        <div class="listimgleft">
+            <span>
+                <img src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epCo37qrVnnIWiaos1uz4kwhIOCnP8BZvm2Cd2LDnhayia97Pn66PMmkSslGrsH6Q0SWuHuQ421WicSw/0" alt="微联天下"></span>
+            <h2>明伟</h2>
+            <h3>2017-08-25 09:38:19</h3></div>
+        <div class="listimgright">
+            <p>已注册</p>
+        </div>
+    </a>
+</div>
+<p style="height: 50px;"></p>
+<div class="back">
+	<div class="backbox">
+		<div class="backcon">
+			<a onClick="javascript :history.back(-1);">
+				<p class="pt5">
+					<i class="icon-fanhui03"></i>
+				</p>
+				<p>返回</p>
+			</a>
+		</div>
+		<div class="backcon">
+			<a href="home.html">
+				<p class="pt5">
+					<i class="icon-zhuye"></i>
+				</p>
+				<p>主页</p>
+			</a>
+		</div>
+		<div class="backcon">
+			<a href="http://mp.weixin.qq.com/s/34NWaNdmC80lSNI0kLOqdw">
+				<p class="pt5 news">
+					<i class="icon-qiutao"></i>
+				</p>
+				<p>会员</p>
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	function layeropen(i,t){
+		$(".tab li").removeClass("active");
+		$(t).addClass("active");
+		$(".lbox").addClass("hide");
+		$(".read_"+i).removeClass("hide");
+	}
+	function descshow(i){
+		if($(".desc_"+i).hasClass("hide")){
+			$(".desc_"+i).removeClass("hide");
+		}else{
+			$(".desc_"+i).addClass("hide");
+		}
+	}
+</script>
+</body>
+
+</html>

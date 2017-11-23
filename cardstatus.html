@@ -24,36 +24,27 @@
     <link href="res/css/home.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="home-card">
-	<div class="home-card-boxwhite">
-		<h1 class="recharge-title">储值余额</h1>
-		<h3>0元</h3>
-		<div class="cardno_t">
-			<p class="Bzluol_line"></p>
-			<span>储值余额即现金</span>
+<h2 class="cell-tit">会员级别</h2>
+<div class="arrow-list-box">
+	<div class="arrow-list-cell">
+		<a class="leftname">
+			<span class="">会员卡</span></a>
+		<div class="rightval">
+			<p class="rightbtn linkred"></p>
 		</div>
 	</div>
 </div>
-<div class="loadmore-box">
-	<div>
-		<p style="height: 40px;"></p>
-		<a class="button btn-big90 btn-center btn-normal" name="button" onClick="showlist()">查看流水</a>
-	</div>
-	<div id="show1" class="dialogcash hide">
-		<div class="dialogbox-con">
-			<h2>
-				验证密码
-				<i class="icon-guanbi fr CSZ Fs-20 closebtn" onClick="closelist()"></i></h2>
-			<div>
-				<input type="password" class="input_pass_weixin" maxlength="6" name="cardpass"></div>
-			<p style="height: 10px;"></p>
-			<a>
-			</a>
-			<p style="height: 10px;"></p>
-			<a class="button btn-big btn-center btn-ghost-disable_ btn-wechat" name="button">验证</a>
-			<p style="height: 20px;"></p>
-		</div>
-	</div>
+<h2 class="cell-tit">会员权益</h2>
+<div class="cell-desbox">
+	<p>你享有美丽倍增(计划)、美丽共享(计划)以及老带新回馈(计划)对应的会员权益，详情请咨询您的专属顾问或客服专员。</p>
+</div>
+<div class="font_tofollow_box ">
+    <p style="height: 40px;"></p>
+    <img class="word" src="http://member.skinperfect.cn/project/apps/wallet/img/font_card_word.png">
+    <p style="height: 20px;"></p>
+    <div class="point_box">
+        <img class="point2" src="http://member.skinperfect.cn/project/apps/wallet/img/font_follow_point.png" width="40"></div>
+    <p style="height: 100px;"></p>
 </div>
 <p style="height: 50px;"></p>
 <div class="back">
@@ -85,14 +76,5 @@
 	</div>
 </div>
 </body>
-<script>
-function showlist(){
-	var s = document.getElementById('show1');
-	s.setAttribute("class", "dialogcash"); 
-}
-function closelist(){
-	var s = document.getElementById('show1');
-	s.setAttribute("class", "dialogcash hide"); 
-}
-</script>
+
 </html>
